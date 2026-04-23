@@ -13,6 +13,7 @@
 
 ## 🚀 Live Demo
 
+🔗 **[View Live Dashboard →](https://wind-turbine-dashboard-one.vercel.app/)**
 > Run locally following the setup instructions below. Frontend on `http://localhost:3000`, API on `http://127.0.0.1:8000`
 
 ---
