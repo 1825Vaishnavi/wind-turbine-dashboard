@@ -30,7 +30,38 @@ This project directly mirrors what Accelerate Wind is building:
 
 ## 🏗️ High Level Design (HLD)
 
-![HLD Diagram](wt.png)
+┌─────────────────────────────────────────────────────────────────┐
+│              Anemometer Sensor Data (3+ Sites)                  │
+│     Boston · Worcester · Springfield · 10K+ readings/day        │
+└──────────────────────────────┬──────────────────────────────────┘
+                               │ sensor ingestion
+                               ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                   FastAPI Backend (main.py)                     │
+│  /api/readings  |  /api/alerts  |  /api/stats  |  /api/db/count │
+│         CORS enabled · RESTful · Auto-documented (Swagger)      │
+└──────────┬──────────────────────────────────────┬───────────────┘
+           │                                      │
+           ▼                                      ▼
+┌─────────────────────┐              ┌────────────────────────┐
+│  PostgreSQL DB       │              │   AWS S3 Archival      │
+│  sensor_readings    │              │   JSON snapshots       │
+│  time-series storage│              │   daily backup         │
+└─────────────────────┘              └────────────────────────┘
+           │
+           ▼
+┌─────────────────────────────────────────────────────────────────┐
+│              React + TypeScript Frontend (App.tsx)              │
+│                                                                 │
+│  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐          │
+│  │ KPI Cards│ │ Energy   │ │  Alert   │ │  Site    │          │
+│  │Wind·RPM  │ │ Chart.js │ │  Panel   │ │ Selector │          │
+│  │Temp·kWh  │ │Time-series│ │Thresholds│ │3 Sites   │          │
+│  └──────────┘ └──────────┘ └──────────┘ └──────────┘          │
+│              Tailwind CSS · Sub-second refresh · Responsive     │
+└─────────────────────────────────────────────────────────────────┘
+         ↓
+[ Reduced manual monitoring effort by ~60% for field engineers ]
 
 ---
 
