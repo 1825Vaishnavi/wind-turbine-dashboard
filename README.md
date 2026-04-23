@@ -7,7 +7,7 @@
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-3.4-38BDF8?logo=tailwindcss)
 ![Chart.js](https://img.shields.io/badge/Chart.js-4.0-FF6384?logo=chartdotjs)
 
-> **Built for Accelerate Wind Internship 2026** — A production-grade real-time dashboard for monitoring wind turbine operations across multiple sites, directly mirroring Accelerate Wind's customer reporting dashboard for turbine and anemometer statistics.
+> **Built for Accelerate Wind Internship 2026** - A production-grade real-time dashboard for monitoring wind turbine operations across multiple sites, directly mirroring Accelerate Wind's customer reporting dashboard for turbine and anemometer statistics.
 
 ---
 
