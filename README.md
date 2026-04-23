@@ -7,7 +7,7 @@
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-3.4-38BDF8?logo=tailwindcss)
 ![Chart.js](https://img.shields.io/badge/Chart.js-4.0-FF6384?logo=chartdotjs)
 
-> **Built for Accelerate Wind Internship 2026** — A production-grade real-time dashboard for monitoring wind turbine operations across multiple sites, directly mirroring Accelerate Wind's customer reporting dashboard for turbine and anemometer statistics.
+> **Built for Accelerate Wind Internship 2026** - A production-grade real-time dashboard for monitoring wind turbine operations across multiple sites, directly mirroring Accelerate Wind's customer reporting dashboard for turbine and anemometer statistics.
 
 ---
 
@@ -19,7 +19,7 @@
 
 ## 📌 Project Overview
 
-A full-stack real-time operations dashboard that ingests anemometer sensor data from **3+ turbine sites**, processes **10K+ readings/day** through a FastAPI backend, stores time-series data in PostgreSQL, and archives to AWS S3 — all visualized in a responsive React + TypeScript frontend with sub-second refresh rates.
+A full-stack real-time operations dashboard that ingests anemometer sensor data from **3+ turbine sites**, processes **10K+ readings/day** through a FastAPI backend, stores time-series data in PostgreSQL, and archives to AWS S3 - all visualized in a responsive React + TypeScript frontend with sub-second refresh rates.
 
 This project directly mirrors what Accelerate Wind is building:
 - ✅ **Customer Dashboard** → Live KPI reporting from turbine and anemometer sensors
@@ -70,17 +70,17 @@ This project directly mirrors what Accelerate Wind is building:
 ## ✨ Features
 
 ### 🖥️ Frontend (React + TypeScript + Tailwind)
-- **Live KPI Cards** — Wind speed, energy output, turbine RPM, nacelle temperature updating every 2 seconds
-- **Time-series Chart** — Chart.js line chart showing energy output and wind speed trends in real time
-- **Alert Panel** — Configurable thresholds with color-coded warnings for high wind, low output, overheating
-- **Site Selector** — Switch between 3 turbine sites (Boston, Worcester, Springfield) with live status badges
-- **Responsive Layout** — Tailwind CSS grid supporting 5+ concurrent site views
+- **Live KPI Cards** - Wind speed, energy output, turbine RPM, nacelle temperature updating every 2 seconds
+- **Time-series Chart** - Chart.js line chart showing energy output and wind speed trends in real time
+- **Alert Panel** - Configurable thresholds with color-coded warnings for high wind, low output, overheating
+- **Site Selector** - Switch between 3 turbine sites (Boston, Worcester, Springfield) with live status badges
+- **Responsive Layout** - Tailwind CSS grid supporting 5+ concurrent site views
 
 ### ⚙️ Backend (FastAPI + PostgreSQL)
-- **RESTful API** — Clean endpoints for readings, alerts, stats, and database counts
-- **PostgreSQL Storage** — Every sensor reading stored with timestamp for time-series analysis
-- **Auto-documentation** — Swagger UI at `/docs` for full API exploration
-- **CORS enabled** — Secure cross-origin requests from React frontend
+- **RESTful API** - Clean endpoints for readings, alerts, stats, and database counts
+- **PostgreSQL Storage** - Every sensor reading stored with timestamp for time-series analysis
+- **Auto-documentation** - Swagger UI at `/docs` for full API exploration
+- **CORS enabled** - Secure cross-origin requests from React frontend
 
 ### 🗄️ Data Pipeline
 - **Anemometer ingestion** → FastAPI processing → PostgreSQL storage → AWS S3 archival
@@ -183,8 +183,4 @@ Then visit:
 
 ---
 
-## 👩‍💻 Author
 
-**Vaishnavi Mallikarjun Gajarla**
-MS Data Analytics Engineering — Northeastern University, Boston MA
-[LinkedIn](https://linkedin.com/in/vaishnavi-gajarla) · [GitHub](https://github.com/1825Vaishnavi) · gajarla.v@northeastern.edu
