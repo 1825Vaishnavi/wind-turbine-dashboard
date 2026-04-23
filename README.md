@@ -150,8 +150,4 @@ Then visit:
 
 ---
 
-## 👩‍💻 Author
 
-**Vaishnavi Mallikarjun Gajarla**
-MS Data Analytics Engineering - Northeastern University, Boston MA
-[LinkedIn](https://linkedin.com/in/vaishnavi-gajarla) · [GitHub](https://github.com/1825Vaishnavi) · gajarla.v@northeastern.edu
